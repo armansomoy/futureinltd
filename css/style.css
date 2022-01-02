@@ -1,0 +1,405 @@
+@font-face {
+    font-family: "Eina01-SemiBold";
+    src: url("../fonts/Eina/Eina01-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Eina01-Bold";
+    src: url("../fonts/Eina/Eina01-Bold.ttf");
+}
+
+
+
+@font-face {
+    font-family: "Eina01-Regular";
+    src: url("../fonts/Eina//Eina01-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    text-decoration-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: "Eina01-Regular";
+}
+
+/*===== Common css Ends =====*/
+
+
+
+body {
+    background-position-y: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2,
+p,
+span {
+    color: #444242;
+}
+
+#maintwo {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.sidenav {
+    text-align: center;
+    height: 1130px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0288d1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sidenav .sidenav-content {
+    z-index: 2;
+}
+
+.sidenav-heading .closebtn {
+    padding: 12px 11px 12px 11px;
+    background-color: #fff;
+    line-height: 23px;
+    color: #000;
+    font-size: 35px;
+    background: #FFFFFF;
+    margin: 10px 0px 0px;
+    -webkit-box-shadow: 0px 17px 11px 30px rgba(48, 35, 174, 0.11);
+    box-shadow: 0px 17px 11px 30px rgba(48, 35, 174, 0.11);
+}
+
+
+.sidenav .sidenav-body .sidenav-nav a {
+    font-size: 35px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    padding: 5px 0px;
+    line-height: 60px;
+    font-family: Eina01-Bold;
+    position: relative;
+}
+
+.sidenav .sidenav-body .sidenav-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    z-index: -1;
+    left: 128px;
+    background-color: #3c6dff;
+    height: 18px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.sidenav .sidenav-body .sidenav-nav .active::after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    z-index: -1;
+    left: 128px;
+    background-color: #3c6dff;
+    height: 16px;
+    width: 40%;
+    transition: 0.5s;
+}
+
+.sidenav .sidenav-body .sidenav-nav a:hover::after {
+    width: 40%;
+}
+
+.sidenav .sidenav-body .project-part {
+    padding-top: 50px;
+}
+
+.sidenav .sidenav-body .project-part h4 {
+    font-size: 24px;
+    color: #000;
+    font-family: "Eina01-SemiBold";
+}
+
+.sidenav .sidenav-body .project-part a {
+    display: inline-block !important;
+    cursor: pointer;
+}
+
+
+.sidenav .sidenav-body .project-part .lets-talk {
+    font-size: 24px;
+    color: #fff;
+    padding: 15px 60px;
+    font-family: Eina01-SemiBold;
+    display: inline;
+    background-color: #4C73E9;
+    line-height: 30px;
+}
+
+.sidenav .sidenav-body .project-part .lets-talk-btn {
+    font-size: 24px;
+    color: #4C73E9;
+    border-right: 1px solid #4C73E9;
+    border-top: 1px solid #4C73E9;
+    border-bottom: 1px solid #4C73E9;
+    padding: 13px 15px;
+    background-color: transparent;
+    margin: 0px 0px 0px -4px;
+    cursor: pointer;
+}
+
+.sidenav .sidenav-body .project-part h5 {
+    margin: 0px 0px 0px -4px !important;
+}
+
+.sidenav .sidenav-body .icons a {
+    display: inline-block;
+}
+
+
+
+.sidenav .sidenav-body .icons i {
+    font-size: 25px;
+    padding: 0px 10px;
+    color: #222;
+    transition: 0.3s;
+}
+
+.sidenav .sidenav-body .icons i:hover {
+    color: #4C73E9;
+}
+
+.sidenav .sidenav-body .location {
+    margin: -50px 0px 0px;
+}
+
+.sidenav .sidenav-body .location i {
+    /* font-size: 20px; */
+}
+
+.sidenav .sidenav-body .location a {
+    color: #222222;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closebtn {
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    padding: 12px 11px 12px 11px !important;
+    background-color: #fff;
+    line-height: 23px;
+    color: #000 !important;
+    font-size: 35px !important;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 30px 11px rgba(48, 35, 174, 0.11);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+#navbar .nav-btn img {
+    margin: -52px 0px 0px -23px;
+}
+
+#navbar {
+    height: 120px;
+    line-height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* .contact-btn {
+    padding: 17px 20px;
+    background-color: #4C73E9;
+    color: #fff;
+    border-radius: 0px;
+    font-family: "Eina01-SemiBold";
+    font-size: 16px;
+    line-height: 23.44px;
+} */
+.contact-btn {
+    padding: 15px 32px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 189, 128, 1) 0%, rgba(255, 31, 142, 1) 100%);
+    color: #fff;
+    border-radius: 0px;
+    font-family: "Eina01-SemiBold";
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0px 0px 0px 50px;
+}
+
+.contact-btn:hover {
+    color: #050748;
+}
+
+
+#navbar .nav-btn {
+    float: right;
+    margin-top: 30px;
+    height: 56px;
+    width: 56px;
+    box-shadow: 8px 8px 22px 0 rgba(105, 111, 206, 0.13);
+
+    cursor: pointer;
+    background: rgba(110, 168, 255, 0.685);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 5px;
+    border: 1px solid rgba(142, 149, 243, 0.603);
+}
+
+
+#banner-part {
+    height: 800px;
+    background-image: -moz-linear-gradient(45deg, #9217de 0%, #4775ff 50%, #00b6d4 100%);
+    background-image: -webkit-linear-gradient(45deg, #9217de 0%, #4775ff 50%, #00b6d4 100%);
+    background-image: linear-gradient(45deg, #4a0079 0%, #4202b2 50%, #4400b1 100%);
+    position: relative;
+}
+
+#banner-part .slider-nav {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 20px 25%;
+    text-align: center;
+}
+
+
+#banner-part .slider-nav .boxes {
+    height: 150px;
+    width: 150px !important;
+    margin: 0px 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(185, 185, 185, 0.603);
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+#banner-part .slider-nav .boxes h6 {
+    font-size: 18px;
+    font-family: "Eina01-SemiBold";
+    padding: 20px 0px;
+}
+
+#banner-part .slider-nav .boxes img {
+    display: inline;
+    padding: 10px 0px 0px;
+}
+
+#banner-part .slider-nav .develop-box h6 {
+    font-size: 18px;
+    font-family: "Eina01-SemiBold";
+    padding: 10px 0px;
+}
+
+#banner-part .slider-nav .develop-box img {
+    display: inline;
+    padding: 5px 0px 0px;
+}
+
+#banner-part .banner-part-one {
+    height: 800px;
+    padding: 100px 0px;
+    background: -moz-linear-gradient(top, #c7ecff 0%, #f9efff 100%);
+    background: -webkit-linear-gradient(top, #c7ecff 0%, #f9efff 100%);
+    background: linear-gradient(to bottom, #c7ecff 0%, #f9efff 100%);
+}
+
+#banner-part .banner-part-one img {
+    width: 100%;
+    padding-top: 60px;
+}
+
+
+
+.banner-part-one h1 {
+    font-family: "Eina01-Bold";
+    color: #050748;
+    padding: 80px 0px 25px;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.banner-part-one p {
+    font-family: "Eina01-Regular";
+    color: #6a6a8e;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.banner-part-one .contact-btn {
+    margin: 0px;
+}
+
+
+/* .banner-part-one .contact-btn:hover {
+    background: rgb(255, 31, 142);
+    background: linear-gradient(90deg, rgba(255, 31, 142, 1) 0%, rgba(255, 189, 128, 1) 100%, rgba(2, 0, 36, 1) 100%);
+} */
